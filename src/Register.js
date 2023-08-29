@@ -78,12 +78,10 @@ const Register = () => {
       marginLeft={-20}
       mt={-10}
 
-     // Adding margin bottom to create some space between the text and the form
-     >
-      Lorem ipsum dolor sit amet. At ullam totam et soluta recusandae aut labore provident est ratione soluta eum galisum similique et quibusdam reiciendis. Non illum odit aut sunt quidem aut sunt ipsa ex quia inventore ad beatae atque qui sapiente nesciunt qui iure quis. Sed provident architecto et nihil ipsam qui tempore enim sed saepe ipsum. Est exercitationem quaerat ea sapiente consequuntur ea corporis reprehenderit vel necessitatibus nulla est dolor aperiam.
-
-      Qui repudiandae temporibus non accusantium dolor et delectus asperiores. Aut consequatur officiis aut voluptas voluptas cum doloribus enim qui quas repellat est alias iste. Est vero sunt non officia quam quo natus laboriosam aut molestiae veritatis aut ipsum laboriosam sit eius autem eum earum porro.
-     </Text>
+     > <Text textAlign={"center"} fontSize={24} fontWeight={"bold"} > TEXTO</Text><hr/> <br/>
+     Lorem ipsum dolor sit amet. At ullam totam et soluta recusandae aut labore provident est ratione soluta eum galisum similique et quibusdam reiciendis. Non illum odit aut sunt quidem aut sunt ipsa ex quia inventore ad beatae atque qui sapiente nesciunt qui iure quis. Sed provident architecto et nihil ipsam qui tempore enim sed saepe ipsum. 
+     Qui repudiandae temporibus non accusantium dolor et delectus asperiores. Aut consequatur officiis aut voluptas voluptas cum doloribus enim qui quas repellat est alias iste. Est vero sunt non officia quam quo natus laboriosam aut molestiae veritatis aut ipsum laboriosam sit eius autem eum earum porro.
+   </Text>
 
      <Flex marginRight={-40} align="start" bg="white" borderRadius={10} p={6} flex="1" mt={-10} height="400px">
       <FormControl  >

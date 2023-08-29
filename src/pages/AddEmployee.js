@@ -1,8 +1,9 @@
 
-import { Box, Heading, Flex, Icon, FormControl, Input, Text, FormLabel, Checkbox, Radio, Select, Grid } from "@chakra-ui/react"
+import { Box, Heading, Flex, Icon, FormControl, Input, Text, FormLabel, Checkbox, Radio, Select, Grid, Image } from "@chakra-ui/react"
 import React, { useState } from "react";
 import { FaHome, FaUser, FaCog, FaSearch, FaBell, FaEnvelope, FaComments } from "react-icons/fa";
 import Switch from "react-switch";
+import { Link } from 'react-router-dom';
 
 const AddEmployee = () => {
 
@@ -45,16 +46,25 @@ const AddEmployee = () => {
         <SidebarIcon icon={FaEnvelope} />
         <SidebarIcon icon={FaSearch} />
       </Box>
-      <Box p={4} flex="1">
-      <Flex bg="white" borderRadius={10} justifyContent="flex-end" paddingEnd={20}>
+      <Box p={4} flex="1" >
+    <Flex bg="#20B2AA" borderRadius={10} justifyContent="flex-end" paddingEnd={16}>
      <Box display="flex" >
-      <IconBox icon={FaHome} label="Home" />
-      <IconBox icon={FaUser}  label="Funcionarios" />
-      <IconBox icon={FaCog}  label="Configurações" />
-      <IconBox icon={FaBell}  label="Avisos" />
+      <Box w={500} bg={"white"} m={2} borderRadius={10} mr={20}>
+      <Text textAlign={'center'} pt={6} fontWeight={'bold'} fontSize={40}
+              > 
+              Lorem Ipsum
+              </Text>
+      </Box>
+     <Link to="/register">
+        <IconBox icon={FaHome} label="Home" />
+      </Link>
+      
+      <IconBox icon={FaUser} label="Funcionarios" />
+      <IconBox icon={FaCog} label="Configurações" />
+      <IconBox icon={FaBell} label="Avisos" />
       <IconBox icon={FaEnvelope} label="Mensagens" />
-      <IconBox icon={FaComments}  label="Chat" />
-      <IconBox icon={FaSearch}  label="Pesquisar" />
+      <IconBox icon={FaComments} label="Chat" />
+      <IconBox icon={FaSearch} label="Pesquisar" />
      </Box>
     </Flex>
 
@@ -69,7 +79,8 @@ const AddEmployee = () => {
             marginLeft={-20}
             mt={-10}
           >
-            <Text textAlign={"center"} fontSize={24} fontWeight={"bold"} > TEXTO</Text><hr/> <br/>
+            <Text textAlign={"center"} fontSize={24} fontWeight={"bold"} > <h1>Lorem Ipsum</h1></Text><hr/> <br/>
+            
             Lorem ipsum dolor sit amet. At ullam totam et soluta recusandae aut labore provident est ratione soluta eum galisum similique et quibusdam reiciendis. Non illum odit aut sunt quidem aut sunt ipsa ex quia inventore ad beatae atque qui sapiente nesciunt qui iure quis. Sed provident architecto et nihil ipsam qui tempore enim sed saepe ipsum. 
             Qui repudiandae temporibus non accusantium dolor et delectus asperiores. Aut consequatur officiis aut voluptas voluptas cum doloribus enim qui quas repellat est alias iste. Est vero sunt non officia quam quo natus laboriosam aut molestiae veritatis aut ipsum laboriosam sit eius autem eum earum porro.
           </Text>
@@ -88,6 +99,7 @@ const AddEmployee = () => {
                 marginRight={-6}
                 w={800}
                 mt={-6}
+                paddingLeft={4}
               >
                 <Text padding="8px" >
                   Adicionar funcionário
@@ -342,30 +354,32 @@ const SidebarIcon = ({ icon }) => (
 );
 const IconBox = ({ icon, label }) => (
   <Box
+   display="flex"
+   flexDirection="column"
+   alignItems="center"
+   justifyContent="center"
+   p={2}
+   m={4}
+   cursor="pointer"
+   transition="transform 0.2s"
+   _hover={{
+    transform: "scale(1.1)",
+   }}
+  >
+   <Box
     display="flex"
-    flexDirection="column"
     alignItems="center"
     justifyContent="center"
-    p={2}
-    m={4}
-    cursor="pointer"
-    transition="transform 0.2s"
-    _hover={{
-      transform: "scale(1.1)",
-    }}
-  >
-    <Box
-      display="flex"
-      alignItems="center"
-      justifyContent="center"
-      borderRadius="10%"
-      border="2px solid #20B2AA"
-      p={3}
-      mb={1}
-    >
-      <Icon as={icon} fontSize="24px" color="#20B2AA" />
-    </Box>
-    <Text fontSize="12px">{label}</Text>
+    borderRadius="10%"
+    border="2px solid #fff"
+    color={"#20B2AA"}
+    bg={"white"}
+    p={3}
+    mb={1}
+   >
+    <Icon as={icon} fontSize="24px" />
+   </Box>
+   <Text fontSize="14px" color={"White"}> {label}</Text>
   </Box>
-);
+ );
 export default AddEmployee;

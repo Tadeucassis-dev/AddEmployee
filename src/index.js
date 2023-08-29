@@ -13,6 +13,7 @@ ReactDOM.render(
       <React.StrictMode>
         <Routes> 
           <Route path="/" element={<Register />} /> 
+          <Route path="/Register" element={<Register />} />
           <Route path="/Add-employee" element={<AddEmployee />} />
         </Routes>
       </React.StrictMode>

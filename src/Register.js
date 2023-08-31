@@ -1,5 +1,5 @@
 
-import { Box, Heading, Flex, Icon, FormControl, Input, Button, Text, Image, LinkProps } from "@chakra-ui/react"
+import { Box, Heading, Flex, Icon, FormControl, Input, Button, Text, Image, LinkProps, Textarea } from "@chakra-ui/react"
 import React, { useState } from "react";
 import { FaHome, FaUser, FaCog, FaSearch, FaBell, FaEnvelope, FaComments } from "react-icons/fa";
 import Switch from "react-switch";
@@ -53,8 +53,8 @@ const Register = () => {
           <Box display="flex" >
             <Box w={500} bg={"white"} m={2} borderRadius={10} mr={20}>
               <Text textAlign={'center'} pt={6} fontWeight={'bold'} fontSize={40}
-              > 
-              Lorem Ipsum
+              >
+                Lorem Ipsum
               </Text>
             </Box>
             <Link to="/register">
@@ -146,102 +146,17 @@ const Register = () => {
                   ml={1}
                 />
               </Flex>
-              <Box mt={2} bg="#DCDCDC" p={2} borderRadius={8}>
-                <Box>
-                  <Input
-                    p={1}
-                    type="text"
-                    value={`Nome: ${name}`}
-                    isReadOnly
-                    border={'none'}
-                    fontSize={20}
-                    h={8}
-                  />
-                  <Flex mt={2}>
-                    <Box>
-                      <Input
-                        type="text"
-                        value={`CPF: ${cpf}`}
-                        isReadOnly
-                        bg="#20B2AA"
-                        borderRadius={20}
-                        h={8}
-                        w={150}
-                        flex={1}
-                        mr={2}
-                      />
-                      <Input
-                        type="text"
-                        value={`Ativ: ${atividade}`}
-                        isReadOnly
-                        bg="#20B2AA"
-                        borderRadius={20}
-                        h={8}
-                        w={28}
-                        flex={1}
-                        mr={2}
-                      />
-                      <Input
-                        type="text"
-                        value={`Cargo: ${cargo}`}
-                        isReadOnly
-                        bg="#20B2AA"
-                        w={100}
-                        h={8}
-                        borderRadius={20}
-                        flex={1}
-                      />
-                    </Box>
-                  </Flex>
-                </Box>
-              </Box>
-              <Box mt={2} bg="#DCDCDC" p={2} borderRadius={8}>
-                <Input
-                  p={1}
-                  type="text"
-                  value={`Nome: ${name}`}
-                  fontSize={20}
-                  isReadOnly
-                  border={"none"}
-                  h={6}
-                />
-                <Flex mt={2} >
-                  <Box>
-                    <Input
-                      type="text"
-                      value={`CPF: ${cpf}`}
-                      isReadOnly
-                      bg="#20B2AA"
-                      borderRadius={20}
-                      h={8}
-                      w={150}
-                      flex={1}
-                      mr={2}
-                    />
-
-                    <Input
-                      type="text"
-                      value={`Ativ:  ${atividade}`}
-                      isReadOnly
-                      bg="#20B2AA"
-                      borderRadius={20}
-                      w={28}
-                      h={8}
-                      flex={1}
-                      mr={2}
-                    />
-                    <Input
-                      type="text"
-                      value={`Cargo: ${cargo}`}
-                      isReadOnly
-                      bg="#20B2AA"
-                      borderRadius={20}
-                      w={100}
-                      h={8}
-                      flex={1}
-                    />
-                  </Box>
-                </Flex>
+              <Box
+                border={'1px'}
+                color={"#20B2AA"}
+                borderRadius={6}
+                mt={4}
+                h={180}
+              >
+                <Text m={4} textAlign={"center"} textColor={"black"} fontWeight={"bold"}>
+                  <h1>Lorem Ipsum</h1><hr/><br/>
+                  Aut consequatur officiis aut voluptas voluptas cum doloribus enim qui quas repellat est alias iste. Est vero sunt non officia quam quo natus laboriosam aut molestiae veritatis aut ipsum laboriosam sit eius autem eum earum porro.
+                </Text>
               </Box>
               <Flex pt={2} justifyContent="flex-end" borderRadius={8} textAlign="right">
                 <Text fontWeight="bold" mr={4}>
